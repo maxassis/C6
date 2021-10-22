@@ -1,0 +1,76 @@
+.header-external-container {
+    background-color: #FFFFFF;
+
+    @include responsive(480px){
+        background-color: black;        
+    }
+}
+
+.header-container-internal{
+    padding: 1.6rem 0;
+    @include flex(row, center, space-between);
+
+    .wrapper-logo{
+        @include flex(row, center, center);
+        gap:20rem;
+
+        @include responsive(992px){
+            gap:8rem;
+        }
+
+        @include responsive(768px){
+            gap:3rem;
+        }
+    }
+
+    ul{
+        @include flex(row, center, center);
+        gap: 4.65rem;
+
+        .item-header{
+            @include flex(row, center, center)
+        }
+
+        li{
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #616161;
+            opacity: 0.7;
+
+            img{
+                margin-left: 1.2rem;
+            }
+
+        }
+
+
+        @include responsive(768px){
+            gap: 1.65rem;
+        }
+
+        @include responsive(680px){
+            display: none;
+        }
+    }
+
+
+    @include responsive(480px){
+        background-color: black;
+    }
+}
+
+.header-logo-desktop{
+    display:block;
+    @include responsive(480px){
+        display:none;        
+    }
+}
+
+.header-logo-mobile{
+    display:none;
+    @include responsive(480px){
+        display:block;        
+    }
+}
+
