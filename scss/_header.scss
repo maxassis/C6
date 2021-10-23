@@ -1,9 +1,9 @@
 .header-external-container {
-    background-color: #FFFFFF;
+    // background-color: #FFFFFF;
 
-    @include responsive(480px){
-        background-color: black;        
-    }
+    // @include responsive(480px){
+    //     background-color: black;        
+    // }
 }
 
 .header-container-internal{
@@ -35,7 +35,7 @@
             font-weight: 500;
             font-size: 1.6rem;
             line-height: 1.9rem;
-            color: #616161;
+            color:#FFFFFF;;
             opacity: 0.7;
 
             img{
@@ -54,10 +54,6 @@
         }
     }
 
-
-    @include responsive(480px){
-        background-color: black;
-    }
 }
 
 .header-logo-desktop{
