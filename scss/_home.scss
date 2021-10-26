@@ -6,11 +6,9 @@
   background-repeat: no-repeat;
 
   @include responsive(480px) {
-    background:none;
+    background: none;
     background-color: black;
   }
-
-
 }
 
 .text-box {
@@ -67,12 +65,11 @@
       }
     }
 
-
     @include responsive(480px) {
-        margin: 12px auto 0 auto;
-        max-width:366px;
-        width: 100%;
-      }
+      margin: 12px auto 0 auto;
+      max-width: 366px;
+      width: 100%;
+    }
   }
 
   .hero-subtitle {
@@ -87,11 +84,152 @@
 
       @include responsive(480px) {
         text-align: center;
-      }   
+      }
     }
 
     @include responsive(480px) {
-        margin-top:1.6rem
-      }   
+      margin-top: 1.6rem;
+    }
+  }
+}
+
+//tarifs section
+
+.tarifs-container {
+  .container-internal {
+    padding-bottom: 81.86px;
+
+    @include flex(row, center, center);
+  }
+}
+
+.tarifs-box-texts {
+  width: 100%;
+  max-width: 62.8rem;
+  height: 60.3rem;
+  margin-top: 9.6rem;
+
+  .tarifs-title {
+    h2 {
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 4rem;
+      line-height: 130%;
+      letter-spacing: -0.03em;
+      color: #242424;
+
+      @include responsive(768px) {
+        font-size: 32px;
+      }
+    }
+
+    p {
+      font-family: Montserrat;
+      font-weight: 500;
+      font-size: 2.8rem;
+      line-height: 130%;
+      color: #616161;
+      margin-top: 0.8rem;
+
+      @include responsive(768px) {
+        font-size: 2.4rem;
+      }
+    }
+
+    @include responsive(768px) {
+      text-align: center;
+      height: auto;
+    }
+  }
+
+  .box-cards {
+    margin-top: 10rem;
+
+    .card-line {
+      @include flex(row, center, space-between);
+
+      .card {
+        width: 100%;
+        max-width: 25.9rem;
+        height: 17.9rem;
+
+        img:nth-child(2) {
+          margin-top: 1rem;
+        }
+
+        h3 {
+          width: 100%;
+          max-width: 22.7rem;
+          font-family: Montserrat;
+          font-weight: 500;
+          font-size: 1.8rem;
+          line-height: 150%;
+          color: #242424;
+          margin-top: 1.6rem;
+
+          @include responsive(768px) {
+            text-align: center;
+          }
+        }
+
+        p {
+          font-size: 1.6rem;
+          line-height: 150%;
+          color: #616161;
+          margin-top: 0.8rem;
+
+          @include responsive(768px) {
+            text-align: center;
+          }
+        }
+
+        @include responsive(768px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      @include responsive(768px) {
+        flex-direction: column;
+        gap: 64px;
+        height: auto;
+      }
+    }
+
+    .card-second-line {
+      @extend .card-line;
+      margin-top: 6.8rem;
+
+      @include responsive(768px) {
+        margin-top: 6.4rem;
+      }
+    }
+
+
+    @include responsive(768px) {
+      margin-top: 6.4rem;
+    }
+
+  }
+
+  @include responsive(768px) {
+    height: auto;
+  }
+}
+
+.cards-images {
+  img {
+    margin-top: -6.5rem;
+    margin-left: 12.071rem;
+
+    @include responsive(991px) {
+      margin-left: 0px;
+    }
+
+    @include responsive(768px) {
+      display: none;
+    }
   }
 }
