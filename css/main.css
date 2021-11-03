@@ -427,3 +427,95 @@ button {
     display: none;
   }
 }
+
+.black-card {
+  background-color: #fafafa;
+}
+.black-card__container-internal {
+  padding-top: 10.9rem;
+  padding-bottom: 13.4rem;
+}
+.black-card__wrapper-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.black-card__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.black-card__item h2 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: -0.03em;
+  color: #242424;
+}
+.black-card__item p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #616161;
+  margin-top: 0.8rem;
+}
+.black-card__forYou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 59.2rem;
+  height: 7.2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.1rem;
+  border-radius: 12rem;
+  border: 1px solid #c4c4c4;
+}
+.black-card__forYou span:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 269px;
+  height: 56px;
+  left: 987px;
+  background: #242424;
+  border-radius: 120px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.black-card__forYou span:last-child {
+  margin-right: 7.4rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #616161;
+}
