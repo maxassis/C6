@@ -303,4 +303,74 @@
       color: #616161;
     }
   }
+
+  &__black {
+    height: 42.4rem;
+    margin-top: 8.7rem;
+    background: linear-gradient(98.6deg, #020302 7.61%, #242424 96.26%);
+    border-radius: 1.2rem;
+    padding: 97px 0px 0px 103px;
+    position: relative;
+  }
+
+
+  &__text-wrapper {
+    width: 34.1rem;
+    height: 22.1rem;
+  }
+
+  &__title-wrapper {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+  }
+
+  &__long-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-top: 16px;
+  }
+
+  &__icon-wrapper {
+    width: 169px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 44px;
+
+    & > span {
+      font-family: 'Inter';
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: #FAFAFA;
+    }
+  }
+
+  &__cel-img {
+    position: absolute;
+    bottom: 0px;
+    right: 136px;
+  }
+
+  &__card-img {
+    position: absolute;
+    right: 232.63px;
+    top: -80px;
+  }
+
+  &__logo-business {
+    position: absolute;
+    bottom: 53px;
+    right: 72.44px;
+  }
+
 }
