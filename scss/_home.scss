@@ -244,6 +244,10 @@
 
   &__wrapper-title {
     @include flex(row, center, space-between);
+
+    @include responsive(850px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -256,6 +260,13 @@
       font-size: 4rem;
       letter-spacing: -0.03em;
       color: #242424;
+
+      @include responsive(600px) {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 130%;
+        text-align: center;
+      }
     }
 
     p {
@@ -264,7 +275,18 @@
       font-size: 2.8rem;
       color: #616161;
       margin-top: 0.8rem;
+
+      @include responsive(600px) {
+        font-size: 2.4rem;
+        line-height: 130%;
+        text-align: center;
+      }
     }
+
+    @include responsive(850px) {
+      margin-bottom: 4rem;
+    }
+
   }
 
   &__forYou {
@@ -291,6 +313,13 @@
       line-height: 2rem;
       letter-spacing: 0.02em;
       color: #ffffff;
+
+      @include responsive(600px) {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        width: 171px;
+        height: 48px;
+      }
     }
 
     span:last-child {
@@ -301,6 +330,16 @@
       text-align: center;
       letter-spacing: 0.02em;
       color: #616161;
+
+      @include responsive(600px) {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        margin: 0 1.7rem 0 3.3rem;
+      }
+    }
+
+    @include responsive(600px) {
+      width: 100%;
     }
   }
 
@@ -311,12 +350,21 @@
     border-radius: 1.2rem;
     padding: 97px 0px 0px 103px;
     position: relative;
+
+    @include responsive(1080px) {
+      padding: 64px 0 0 0;
+      height: 65.2rem;
+    }
   }
 
 
   &__text-wrapper {
     width: 34.1rem;
     height: 22.1rem;
+
+    @include responsive(1080px) {
+      margin-inline: auto;
+    }
   }
 
   &__title-wrapper {
@@ -326,6 +374,15 @@
     line-height: 130%;
     letter-spacing: -0.03em;
     color: #FFFFFF;
+
+    @include responsive(1080px) {
+      text-align: center;
+    }
+
+    @include responsive(600px) {
+      font-size: 22px;
+    }
+
   }
 
   &__long-text {
@@ -336,6 +393,14 @@
     color: #FFFFFF;
     opacity: 0.7;
     margin-top: 16px;
+
+    @include responsive(1080px) {
+      text-align: justify;
+    }
+
+    @include responsive(600px) {
+      text-align: center;
+    }
   }
 
   &__icon-wrapper {
@@ -353,24 +418,64 @@
       line-height: 150%;
       color: #FAFAFA;
     }
+
+    @include responsive(1080px) {
+      margin-inline: auto;
+    }
+
+    @include responsive(1080px) {
+      margin-top: 40px;
+    }
   }
 
   &__cel-img {
     position: absolute;
     bottom: 0px;
     right: 136px;
+
+    @include responsive(1080px) {
+      height: 250px;
+      right: 27%;
+    }
+
+    @include responsive(600px) {
+      right: 10%;
+    }
+
+    @include responsive(480px) {
+      right: 0;
+    }
   }
 
   &__card-img {
     position: absolute;
     right: 232.63px;
     top: -80px;
+
+    @include responsive(1080px) {
+      height: 297px;
+      right: 33%;
+      top: 280px;
+    }
+
+    @include responsive(600px) {
+      right: 22%;
+      top: 282px;
+    }
+
+    @include responsive(480px) {
+      right: 13%;
+    }
   }
 
   &__logo-business {
     position: absolute;
     bottom: 53px;
     right: 72.44px;
+
+    @include responsive(1080px) {
+      display: none;
+    }
   }
 
 }
